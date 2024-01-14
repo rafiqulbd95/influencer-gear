@@ -16,6 +16,9 @@
 body {
   font-family: var(--font-primary);
 }
+.d-flex {
+  display: flex;
+}
 .btn {
   color: #fff;
   font-size: 1rem;
@@ -46,17 +49,17 @@ header {
   font-weight: 700;
 }
 .nav ul {
-    display: flex;
-    gap: 34px;
+  display: flex;
+  gap: 34px;
 }
-.nav ul li a:hover{
-    color: var(--secondary-color);
+.nav ul li a:hover {
+  color: var(--secondary-color);
 }
 .nav ul li a {
   color: var(--primary-color);
   font-size: 1rem;
   font-weight: 600;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 /* nav end */
 
@@ -82,10 +85,77 @@ header {
   font-weight: 600;
   margin-bottom: 50px;
 }
-.banner .banner-content .btn i{
-    margin-left: 10px;
+.banner .banner-content .btn i {
+  margin-left: 10px;
 }
 
 /* banner end */
 
 /* header end */
+/* sponsor-area */
+.sponsor-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 60px;
+  padding: 100px 165px;
+}
+/* sponsor-area end */
+
+.collection-area {
+  padding: 50px 160px;
+}
+.section-title h3 {
+  color: var(--primary-color);
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  padding: 50px 0;
+}
+.collection-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+.collection-items {
+  padding: 17px 15px;
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+}
+.collection-items h4 {
+  color: #18191f;
+  font-size: 1.75rem;
+  font-weight: 500;
+}
+.collection-items h5 {
+  color: rgba(0, 0, 0, 0.87);
+  font-family: "Inter";
+  font-size: 1.5rem;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.collection-items ul {
+  gap: 3px;
+}
+.collection-items ul li {
+  font-size: 0.7rem;
+  color: var(--secondary-color);
+}
+.collection-items ul li span {
+  color: #5e6366;
+  font-family: "Roboto";
+  font-size: 0.87rem;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+  padding-left: 10px;
+}
+.collection-items p {
+  color: #787885;
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.252px;
+  padding-top: 10px;
+}

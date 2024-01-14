@@ -30,6 +30,17 @@
     .banner img{
         width: 100%;
     }
+
+    .sponsor-area{
+        padding: 30px;
+        gap: 20px;
+    }
+    .collection-area {
+        padding: 20px;
+      }
+    .collection-content{
+        grid-template-columns: 1fr;
+    }
    
     
 }
@@ -65,5 +76,14 @@
     .banner img{
         width: 100%;
     }
-    
+    .sponsor-area{
+        padding: 70px;
+        gap: 30px;
+    }
+    .collection-area {
+        padding: 50px;
+      }
+    .collection-content{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
