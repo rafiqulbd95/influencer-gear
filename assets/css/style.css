@@ -11,38 +11,81 @@
   --font-Roboto: "Roboto", sans-serif;
   --font-Manrope: "Manrope", sans-serif;
   --primary-color: #3a3a3a;
-  --secoundry-color: #e02c6d;
+  --secondary-color: #e02c6d;
 }
 body {
   font-family: var(--font-primary);
 }
-
+.btn {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: 15px 25px;
+  background: var(--secondary-color);
+  border-radius: 41px;
+}
 a {
   text-decoration: none;
 }
 li {
   list-style: none;
 }
-
+/* header */
 header {
   padding: 30px 120px;
 }
+
+/* nav */
 .nav {
   display: flex;
   justify-content: space-between;
 }
 .nav h3 {
   color: var(--primary-color);
-  font-size: 24px;
+  font-size: 1.5rem;
   font-weight: 700;
 }
 .nav ul {
-  display: flex;
-  gap: 34px;
+    display: flex;
+    gap: 34px;
 }
-
+.nav ul li a:hover{
+    color: var(--secondary-color);
+}
 .nav ul li a {
+  color: var(--primary-color);
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all .4s;
+}
+/* nav end */
+
+/* banner */
+.banner {
+  background-image: url("../images/Circledesign.svg");
+  background-repeat: no-repeat;
+  background-position: center right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 0;
+  gap: 130px;
+}
+.banner .banner-content h1 {
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+.banner .banner-content p {
   color: var(--primary-color);
   font-size: 16px;
   font-weight: 600;
+  margin-bottom: 50px;
 }
+.banner .banner-content .btn i{
+    margin-left: 10px;
+}
+
+/* banner end */
+
+/* header end */
