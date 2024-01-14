@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Manrope:wght@700&family=Poppins:wght@400;500;600;700;900&family=Roboto:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --font-primary: "Poppins", sans-serif;
+  --font-Inter: "Inter", sans-serif;
+  --font-Roboto: "Roboto", sans-serif;
+  --font-Manrope: "Manrope", sans-serif;
+  --primary-color: #3a3a3a;
+  --secoundry-color: #e02c6d;
+}
+body {
+  font-family: var(--font-primary);
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+
+header {
+  padding: 30px 120px;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+.nav h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  font-weight: 700;
+}
+.nav ul {
+  display: flex;
+  gap: 34px;
+}
+
+.nav ul li a {
+  color: var(--primary-color);
+  font-size: 16px;
+  font-weight: 600;
+}
